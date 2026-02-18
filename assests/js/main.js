@@ -63,6 +63,21 @@ function draw() {
   ctx.strokeStyle = "#1f2937";
   ctx.lineWidth = 3;
   ctx.stroke();
+
+    // Triángulo relleno
+    ctx.beginPath();
+    ctx.moveTo(525, 25);
+    ctx.lineTo(605, 25);
+    ctx.lineTo(525, 105);
+    ctx.fill();
+
+    // Triángulo contorneado
+    ctx.beginPath();
+    ctx.moveTo(125, 125);
+    ctx.lineTo(125, 45);
+    ctx.lineTo(45, 125);
+    ctx.closePath();
+    ctx.stroke();
 }
 
 function initUI() {
